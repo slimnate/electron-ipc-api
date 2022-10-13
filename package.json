@@ -1,0 +1,29 @@
+{
+  "name": "electron-ipc-api",
+  "version": "1.0.0",
+  "description": "Node module for creating namespaced API's for electron's IPC feature",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slimnate/electron-ipc-api.git"
+  },
+  "keywords": [
+    "electron",
+    "ipc",
+    "api",
+    "namespaced",
+    "ns"
+  ],
+  "author": "Slim Nate",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/slimnate/electron-ipc-api/issues"
+  },
+  "homepage": "https://github.com/slimnate/electron-ipc-api#readme",
+  "devDependencies": {
+    "jest": "^29.1.2"
+  }
+}
