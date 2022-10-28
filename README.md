@@ -1,19 +1,17 @@
-# electron-ipc-api
+# slim-electron-ipc-api
 
-This module is designed to allow for easily designing modular/namespaced API's and expose them through electron's IPC functionality.
+This module is designed to allow for easily designing modular/namespaced API's and exposing them to the browser process through electron's IPC functionality.
 
 ## Installation
 
 ```
-npm install electron-ipc-api
+npm install slim-electron-ipc-api
 ```
 
 ## Usage
-Example taken from test: 
-
 `lib/api.js` - api declaration: 
 ```js
-const IpcApi = require('electron-ipc-api');
+const IpcApi = require('slim-electron-ipc-api');
 
 const api = {
     ns1: {
@@ -80,3 +78,11 @@ const value = window.api.ns1.method1(/* params */);
 ```
 npm test
 ```
+
+## Real World Example
+
+#### img-keeper
+I designed this package for use in my project [github.com/slimnate/img-keeper](img-keeper), check it out. Relevant files:
+- `src/lib/api.js`
+- `public/electron.js`
+- `public/preload.js`

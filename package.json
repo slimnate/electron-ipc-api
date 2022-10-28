@@ -1,5 +1,5 @@
 {
-  "name": "electron-ipc-api",
+  "name": "slim-electron-ipc-api",
   "version": "1.0.0",
   "description": "Node module for creating namespaced API's for electron's IPC feature",
   "main": "index.js",
