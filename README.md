@@ -18,7 +18,7 @@ const api = {
         method1: function() { /* do something */ },
         method2: function() { /* do something */ },
     }
-}
+};
 
 module.exports = new IpcApi(api);
 ```
@@ -26,13 +26,13 @@ module.exports = new IpcApi(api);
 `electron.js` - main electron file, runs in _main_ process
 ```js
 const { app, BrowserWindow, ipcMain } = require('electron');
-const api = require('.lib/api.js')
+const api = require('.lib/api.js');
 
 ...
 
 app.whenReady().then(() => {
     api.registerHandlers(ipcMain);
-})
+});
 
 ...
 ```
