@@ -1,7 +1,7 @@
 {
-  "name": "slim-electron-ipc-api",
+  "name": "eipc-api",
   "version": "1.0.0",
-  "description": "Node module for creating namespaced API's for electron's IPC feature",
+  "description": "Expose namespaced API's that connect the render processes with the main process using electron's IPC feature.",
   "main": "index.js",
   "scripts": {
     "test": "jest"
