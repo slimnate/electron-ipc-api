@@ -44,15 +44,15 @@ const { contextBridge, ipcRenderer } = require('electron');
 const api = require('./lib/api.js');
 
 ...
-
-contextBridge.exposeInMainWorld('api', api.getInvoker(ipcRenderer));
+const invoker = api.getInvoker(ipcRenderer)
+contextBridge.exposeInMainWorld('api', invoker);
 ```
 
 `client.js` - javascript running in the browser _renderer_ process
 ```js
 ...
 
-const value = window.api.ns1.method1(/* params */);
+const returnValue = window.api.ns1.method1(/* params */);
 
 ...
 ```
