@@ -1,17 +1,17 @@
-# slim-electron-ipc-api
+# eipc-api
 
 This module is designed to allow for easily designing modular/namespaced API's and exposing them to the browser process through electron's IPC functionality.
 
 ## Installation
 
 ```
-npm install slim-electron-ipc-api
+npm install eipc-api
 ```
 
 ## Usage
 `lib/api.js` - api declaration: 
 ```js
-const IpcApi = require('slim-electron-ipc-api');
+const IpcApi = require('eipc-api');
 
 const api = {
     ns1: {
