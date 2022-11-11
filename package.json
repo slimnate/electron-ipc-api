@@ -1,6 +1,6 @@
 {
   "name": "eipc-api",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Expose namespaced API's that connect the render processes with the main process using electron's IPC feature.",
   "main": "index.js",
   "scripts": {
